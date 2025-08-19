@@ -4,52 +4,6 @@
 
 Site web pour le **Muse Bar**, un établissement de restauration d'exception situé au cœur de Rouen. Découvrez une expérience culinaire unique avec nos planches à partager, cocktails originaux et cave privatisable.
 
-## 🎨 Typographie
-
-### **Polices Principales**
-
-- **Playfair Display**
-
-- **Poppins**
-
-- **Funnel Display**
-
-### **Hiérarchie Typographique**
-
-```css
-/* Titres principaux */
-.section-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-/* Sous-titres */
-.section-subtitle {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-/* Corps de texte */
-p,
-li,
-.nav-link {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-/* Navigation et boutons */
-.btn,
-.tab-btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-```
-
 ## 📁 Structure du Projet
 
 ```
@@ -91,6 +45,16 @@ MuseBar/
   --shadow: rgba(11, 26, 57, 0.1); /* Ombres */
 }
 ```
+
+## 🎨 Typographie
+
+### **Polices Principales**
+
+- **Playfair Display**
+
+- **Poppins**
+
+- **Funnel Display**
 
 ### **Breakpoints Responsive**
 
