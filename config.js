@@ -1,6 +1,6 @@
 /**
  * Configuration du site Muse Bar
- * @version 2.0.0
+ * @version 1.0.0
  * @author Ramswed
  */
 
@@ -13,7 +13,7 @@ const SITE_CONFIG = {
     tagline: "Bar et cuisine à partager",
     description:
       "Découvrez Muse Bar, un établissement de restauration d'exception à Rouen où cuisine raffinée et ambiance chaleureuse se rencontrent.",
-    version: "2.0.0",
+    version: "1.0.0",
     year: 2025,
   },
 
