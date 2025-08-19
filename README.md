@@ -1,9 +1,54 @@
 # 🍺 Muse Bar - Site Web Officiel
 
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://musebar.fr)
-[![Status](https://img.shields.io/badge/status-production-ready-brightgreen.svg)](https://musebar.fr)
 
-Site web moderne et responsive pour le **Muse Bar**, un établissement de restauration d'exception situé au cœur de Rouen. Découvrez une expérience culinaire unique avec nos planches à partager, cocktails originaux et cave privatisable.
+Site web pour le **Muse Bar**, un établissement de restauration d'exception situé au cœur de Rouen. Découvrez une expérience culinaire unique avec nos planches à partager, cocktails originaux et cave privatisable.
+
+## 🎨 Typographie
+
+### **Polices Principales**
+
+- **Playfair Display**
+
+- **Poppins**
+
+- **Funnel Display**
+
+### **Hiérarchie Typographique**
+
+```css
+/* Titres principaux */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* Sous-titres */
+.section-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Corps de texte */
+p,
+li,
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Navigation et boutons */
+.btn,
+.tab-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+```
 
 ## 📁 Structure du Projet
 
@@ -46,11 +91,6 @@ MuseBar/
   --shadow: rgba(11, 26, 57, 0.1); /* Ombres */
 }
 ```
-
-### **Typographie**
-
-- **Titres** : Playfair Display (serif) - Élégance et sophistication
-- **Corps de texte** : Poppins (sans-serif) - Lisibilité et modernité
 
 ### **Breakpoints Responsive**
 
@@ -144,13 +184,6 @@ python -m http.server 8000
 npx serve .
 ```
 
-### **Déploiement**
-
-1. **Uploader** tous les fichiers sur votre hébergeur
-2. **Vérifier** que les chemins sont corrects
-3. **Tester** toutes les fonctionnalités
-4. **Configurer** le domaine et SSL
-
 ## 📱 Compatibilité
 
 ### **Navigateurs Supportés**
@@ -168,16 +201,6 @@ npx serve .
 - 📱 **Tablette** : iPad, Android (portrait et paysage)
 - 💻 **Desktop** : Windows, macOS, Linux
 - 🖥️ **Écrans** : 320px à 4K+
-
-## 🧪 Tests
-
-### **Tests Responsive**
-
-- ✅ Navigation mobile
-- ✅ Grilles adaptatives
-- ✅ Typographie responsive
-- ✅ Images adaptatives
-- ✅ Formulaires tactiles
 
 ## 🔍 Maintenance
 
