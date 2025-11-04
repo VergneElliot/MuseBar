@@ -41,17 +41,14 @@ function initNavigation() {
   }
 }
 
-// Initialiser au chargement du DOM si disponible
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initNavigation);
 } else {
   initNavigation();
 }
 
-// Réinitialiser après le chargement des fragments
 window.addEventListener("fragmentsLoaded", initNavigation);
 
-// Gestion du scroll pour la navbar
 let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");

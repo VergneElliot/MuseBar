@@ -141,3 +141,7 @@ npx serve . -p 8000
 Développé par @ramswed pour le Muse Bar
 
 © 2025 Muse Bar. Tous droits réservés.
+
+---
+
+![Homepage du Muse Bar](images/homepage.png)

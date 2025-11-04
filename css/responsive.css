@@ -605,9 +605,6 @@
   }
 }
 
-
-   PETITS MOBILES (max-width: 480px)
-   ======================================== */
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
@@ -1055,9 +1052,6 @@
   }
 }
 
-
-   TRÈS PETITS MOBILES (max-width: 360px)
-   ======================================== */
 @media (max-width: 360px) {
   .container {
     padding: 0 12px;
@@ -1127,9 +1121,6 @@
   }
 }
 
-
-   ORIENTATION PAYSAGE MOBILE
-   ======================================== */
 @media (max-height: 500px) and (orientation: landscape) {
   .hero {
     min-height: 100vh;
@@ -1179,9 +1170,6 @@
   }
 }
 
-
-   ACCESSIBILITÉ - RÉDUCTION DE MOUVEMENT
-   ======================================== */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -1190,9 +1178,6 @@
   }
 }
 
-
-   TOUCH TARGETS - MINIMUM 44x44px
-   ======================================== */
 @media (max-width: 768px) {
   .btn,
   .tab-btn,
