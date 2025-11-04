@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initNavigation() {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navbar = document.querySelector(".navbar");
@@ -39,27 +39,38 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+}
 
-  let lastScrollTop = 0;
-  window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
-    if (!navbar) return;
+// Initialiser au chargement du DOM si disponible
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initNavigation);
+} else {
+  initNavigation();
+}
 
-    const currentScrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
+// Réinitialiser après le chargement des fragments
+window.addEventListener("fragmentsLoaded", initNavigation);
 
-    if (currentScrollTop > 100) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
+// Gestion du scroll pour la navbar
+let lastScrollTop = 0;
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
 
-    if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
-      navbar.style.transform = "translateY(-100%)";
-    } else {
-      navbar.style.transform = "translateY(0)";
-    }
+  const currentScrollTop =
+    window.pageYOffset || document.documentElement.scrollTop;
 
-    lastScrollTop = currentScrollTop;
-  });
+  if (currentScrollTop > 100) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+
+  if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+    navbar.style.transform = "translateY(-100%)";
+  } else {
+    navbar.style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScrollTop;
 });

@@ -1,30 +1,58 @@
 const MENU_CONFIG = {
   categories: [
     {
-      id: "grignotages",
-      name: "Grignotages",
+      id: "tapas",
+      name: "Tapas",
       items: [
         {
-          name: "TARTINE",
-          price: "10€",
-          description:
-            "Pain maison, pesto rouge maison, roquette, artichaut, noix, miel.",
-        },
-        {
-          name: "FOCACCIA AUX OLIVES",
-          price: "10€",
-          description:
-            "Avec tartinables : Houmous basilic, Ricotta basilic-citron.",
-        },
-        {
-          name: "POMMES DE TERRE GRENAILLES",
-          price: "6.50€",
-          description: "Sauce estragon.",
+          name: "CAMEMBERT AU FOUR",
+          price: "8€",
+          description: "Miel, noix, thym, pommes de terre.",
         },
         {
           name: "SAUCISSON",
-          price: "5.50€",
+          price: "6.50€",
           description: "Saucisson traditionnel.",
+        },
+        {
+          name: "ÉPINARDS AU CUMIN",
+          price: "5€",
+          description:
+            "Épinards, cumin, pois chiches grillés, pain, tomate, ail, chèvre frais.<br><small>🌱 végétarien</small>",
+        },
+        {
+          name: "POMMES DE TERRE AU FOUR",
+          price: "6.50€",
+          description:
+            "Pommes de terre, paprika, herbes de Provence, sauce menthe.<br><small>🌱 végétarien</small>",
+        },
+        {
+          name: "CAPONATA",
+          price: "5€",
+          description:
+            "Confit aubergines, tomates séchées, oignon, céleri, pignons, pain, ail.<br><small>🌱 végétarien</small>",
+        },
+        {
+          name: "BROCHETTES POULET - CHORIZO (x3)",
+          price: "7€",
+          description:
+            "Poulet, chorizo, courgettes, dattes, tomates séchées, miel.",
+        },
+        {
+          name: "NUGGETS ÉPICÉS",
+          price: "6€",
+          description: "Sauce yaourt menthe.",
+        },
+        {
+          name: "FOCACCIA AUX OLIVES",
+          price: "8€",
+          description: "Sauce yaourt menthe.<br><small>🌱 végétarien</small>",
+        },
+        {
+          name: "GROS CROQUE MR.",
+          price: "13€",
+          description:
+            "Pain à focaccia, béchamel échalote, jambon, gruyère, Neufchâtel.",
         },
       ],
     },
@@ -38,9 +66,9 @@ const MENU_CONFIG = {
           description: "Apéritif traditionnel.",
         },
         {
-          name: "AMERICANO",
-          price: "6.50€",
-          description: "Cocktail classique.",
+          name: "MUSETTE",
+          price: "4.50€",
+          description: "Apéritif maison.",
         },
         {
           name: "BELLINI",
@@ -52,11 +80,6 @@ const MENU_CONFIG = {
           price: "6.50€",
           description: "Apéritif rafraîchissant.",
         },
-        {
-          name: "KIR",
-          price: "6.50€",
-          description: "Cocktail à base de vin blanc.",
-        },
       ],
     },
     {
@@ -65,28 +88,43 @@ const MENU_CONFIG = {
       items: [
         {
           name: "BLONDE DE SOIF",
-          price: "3.50€ / 6€",
+          price: "4€ / 7€",
           description: "La Cardamine - 4,5% alc (25cl / 50cl).",
         },
         {
           name: "IPA",
-          price: "4.50€ / 7.50€",
+          price: "4.50€ / 8€",
           description: "Spore - 6,0% alc (25cl / 50cl).",
         },
         {
           name: "NEIPA",
-          price: "4.50€ / 7.50€",
+          price: "4.50€ / 8€",
           description: "Les deux amants - 7,0% alc (25cl / 50cl).",
         },
         {
           name: "BLONDE AU ROMARIN",
-          price: "4.50€ / 7.50€",
-          description: "Brewsociety - 5,8% alc (25cl / 50cl).",
+          price: "4.50€ / 8€",
+          description: "Brewoody - 5,8% alc (25cl / 50cl).",
         },
         {
-          name: "SOUR IPA",
-          price: "4.50€ / 7.50€",
-          description: "Les deux amants - 5,0% alc (25cl / 50cl).",
+          name: "AMBRÉE",
+          price: "4.50€ / 8€",
+          description: "Les deux amants - 6,0% alc (25cl / 50cl).",
+        },
+        {
+          name: "TRIPLE",
+          price: "4.50€ / 8€",
+          description: "La Cardamine - 8,7% alc (25cl / 50cl).",
+        },
+        {
+          name: "BLANCHE",
+          price: "4.50€ / 8€",
+          description: "Spore - 5,1% alc (25cl / 50cl).",
+        },
+        {
+          name: "BIÈRE DU MOMENT",
+          price: "4.50€ / 8€",
+          description: "Picon +1€.",
         },
       ],
     },
@@ -105,7 +143,7 @@ const MENU_CONFIG = {
             {
               name: "SPRITZ",
               price: "7€ / 8€",
-              description: "Apérol / Sureau / Campari.",
+              description: "Apérol / Suze / Campari.",
             },
             {
               name: "AMARETTO STORMY",
@@ -118,15 +156,19 @@ const MENU_CONFIG = {
               description: "Cocktail brésilien traditionnel.",
             },
             {
-              name: "ESPRESSO MARTINI",
+              name: "ESPRESSO",
               price: "8€",
-              description: "Vodka, liqueur de café, expresso.",
+              description: "Vodka, expresso.",
             },
             {
-              name: "BRAMBLE STAR",
+              name: "BRAMBLE",
               price: "8€",
-              description:
-                "Gin, sucre citron, liqueur framboise/cerise, shot prosecco.",
+              description: "Gin, mure, citron, sucre de canne, fruit pressé.",
+            },
+            {
+              name: "MOSCOW-LONDON MULE / GIN TO",
+              price: "8€",
+              description: "Gin ou Vodka, citron, Ginger Beer.",
             },
           ],
         },
@@ -134,19 +176,14 @@ const MENU_CONFIG = {
           name: "Sans Alcool",
           items: [
             {
-              name: "DRY TONIC",
-              price: "5.50€",
-              description: "Martini floral 0,0%, Litchi, citron, tonic.",
-            },
-            {
               name: "DRYQUIRI",
-              price: "5.50€",
+              price: "6€",
               description:
-                "Martini Vibrante 0,0%, Pamplemousse, citron, eau gazeuse.",
+                "Martini Floral 0,0%, Litchi sirop, citron, eau gazeuse.",
             },
             {
               name: "CITRONNADE MAISON",
-              price: "5.50€",
+              price: "6€",
               description: "Citron, sirop gingembre, menthe, eau gazeuse.",
             },
           ],
@@ -156,52 +193,41 @@ const MENU_CONFIG = {
     {
       id: "vins",
       name: "Vins",
-      items: [
+      subcategories: [
         {
-          name: "BLAYE - CÔTES DE BORDEAUX",
-          price: "6.50€ / 25€",
-          description: "AOC (12cl / 75cl).",
+          name: "Rouges",
+          items: [
+            {
+              name: "BLAYE - CÔTES DE BORDEAUX",
+              price: "6.50€ / 15€",
+              description: "AOC (12cl / 75cl).",
+            },
+            {
+              name: "CÔTES DU RHÔNE",
+              price: "6.50€ / 15€",
+              description: "AOC (12cl / 75cl).",
+            },
+          ],
         },
         {
-          name: "CÔTES DU RHÔNE",
-          price: "6.50€ / 25€",
-          description: "AOC (12cl / 75cl).",
-        },
-        {
-          name: "UBY n°3 - CÔTES DE GASCOGNE",
-          price: "6.50€ / 25€",
-          description: "IGP (12cl / 75cl).",
-        },
-        {
-          name: "UBY n°4 - CÔTES DE GASCOGNE",
-          price: "6.50€ / 25€",
-          description: "IGP (12cl / 75cl).",
-        },
-        {
-          name: "CHARDONNAY",
-          price: "5.50€ / 23€",
-          description: "IGP (12cl / 75cl).",
-        },
-      ],
-    },
-    {
-      id: "shooters",
-      name: "Shooters",
-      items: [
-        {
-          name: "SHOOTER DU MOMENT",
-          price: "8€",
-          description: "Shooter du moment.",
-        },
-        {
-          name: "SHOOTER DU MOMENT",
-          price: "9€",
-          description: "Shooter du moment.",
-        },
-        {
-          name: "SHOOTER DU MOMENT",
-          price: "8€",
-          description: "Shooter du moment.",
+          name: "Blancs",
+          items: [
+            {
+              name: "RABBLY",
+              price: "13€",
+              description: "Vin de France, Sec Fruité (75cl).",
+            },
+            {
+              name: "UBY n°4 - CÔTES DE GASCOGNE",
+              price: "13€",
+              description: "IGP (75cl).",
+            },
+            {
+              name: "CHARDONNAY",
+              price: "5.50€ / 23€",
+              description: "IGP (12cl / 75cl).",
+            },
+          ],
         },
       ],
     },
@@ -211,22 +237,22 @@ const MENU_CONFIG = {
       items: [
         {
           name: "GINGER BEER",
-          price: "5.50€",
+          price: "4€",
           description: "Ginger beer.",
         },
         {
-          name: "BISSAP",
-          price: "5.50€",
-          description: "Bissap.",
+          name: "BISSAP MAISON",
+          price: "6€",
+          description: "Bissap maison.",
         },
         {
-          name: "JUS DE POMME PÉTILLANT",
-          price: "5.50€",
+          name: "JUS DE POMME PÉTILLANT ARTISANAL",
+          price: "6€",
           description: "33cl.",
         },
         {
-          name: "BIÈRE IPA",
-          price: "5.50€",
+          name: "BIÈRE IPA 0,4%",
+          price: "6€",
           description: "33cl.",
         },
         {

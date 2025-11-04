@@ -7,7 +7,7 @@ function generateMenu() {
   MENU_CONFIG.categories.forEach((category) => {
     const categoryDiv = document.createElement("div");
     categoryDiv.className = `menu-category ${
-      category.id === "grignotages" ? "active" : ""
+      category.id === "tapas" ? "active" : ""
     }`;
     categoryDiv.id = category.id;
 

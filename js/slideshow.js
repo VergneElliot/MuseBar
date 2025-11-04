@@ -84,13 +84,13 @@ function initSlideshow() {
 
   startAutoPlay();
 
-  const slideshowContainer = document.querySelector('.slideshow-container');
+  const slideshowContainer = document.querySelector(".slideshow-container");
   if (slideshowContainer) {
-    slideshowContainer.addEventListener('mouseenter', () => {
+    slideshowContainer.addEventListener("mouseenter", () => {
       stopAutoPlay();
     });
 
-    slideshowContainer.addEventListener('mouseleave', () => {
+    slideshowContainer.addEventListener("mouseleave", () => {
       if (!isUserInteracting) {
         startAutoPlay();
       }
@@ -98,4 +98,4 @@ function initSlideshow() {
   }
 }
 
-window.addEventListener('fragmentsLoaded', initSlideshow);
+window.addEventListener("fragmentsLoaded", initSlideshow);
