@@ -22,7 +22,7 @@ This guide will walk you through deploying the Muse Bar website to Cloudflare Pa
 
 1. Select **"GitHub"** as your Git provider
 2. Authorize Cloudflare to access your GitHub account (if not already done)
-3. Select the repository: **`Ramswed/MuseBar`**
+3. Select the repository: **`VergneElliot/MuseBar`**
 4. Click **"Begin setup"**
 
 ### 1.3 Configure Build Settings
@@ -245,7 +245,7 @@ git push origin main
 
 - **Cloudflare Pages Docs**: https://developers.cloudflare.com/pages/
 - **Cloudflare Support**: https://support.cloudflare.com/
-- **GitHub Repository**: https://github.com/Ramswed/MuseBar
+- **GitHub Repository**: https://github.com/VergneElliot/MuseBar
 
 ---
 

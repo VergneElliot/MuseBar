@@ -16,7 +16,7 @@ Use this checklist to ensure a smooth deployment process.
 - [ ] Navigated to Pages section
 - [ ] Clicked "Create a project" / "Connect to Git"
 - [ ] Connected GitHub account
-- [ ] Selected repository: `Ramswed/MuseBar`
+- [ ] Selected repository: `VergneElliot/MuseBar`
 - [ ] Configured build settings:
   - [ ] Project name: `muse-bar` (or your choice)
   - [ ] Production branch: `main`
