@@ -61,3 +61,6 @@ temp/
 
 # Local development
 .local/
+
+# Image backups
+images_backup/
