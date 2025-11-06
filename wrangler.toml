@@ -5,8 +5,12 @@ name = "muse-bar"
 compatibility_date = "2024-01-01"
 
 # Pages configuration
+# Build output directory - root of the repository
 pages_build_output_dir = "."
 
 # Note: For Cloudflare Pages, most configuration is done through the dashboard.
 # This file is mainly for reference and future use with Wrangler CLI.
+# 
+# IMPORTANT: Make sure Cloudflare Pages is configured to deploy from the 'main' branch
+# and that it's set to auto-deploy on every push to main.
 
