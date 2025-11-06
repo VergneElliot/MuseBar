@@ -58,34 +58,46 @@ Cloudflare Pages will:
 3. Enter your domain name (e.g., `musebar.fr` or `www.musebar.fr`)
 4. Click **"Continue"**
 
-### 2.2 DNS Configuration
+### 2.2 DNS Configuration - Update Nameservers (REQUIRED FIRST STEP)
 
-Cloudflare will automatically detect if your domain is already on Cloudflare:
+**IMPORTANT:** Before connecting your domain to Cloudflare Pages, you must update your nameservers at your domain registrar.
 
-#### If your domain is already on Cloudflare:
-- DNS records will be automatically configured
-- SSL/TLS certificate will be automatically provisioned
-- Wait 1-2 minutes for DNS propagation
+#### Step 1: Update Nameservers at Your Registrar
 
-#### If your domain is NOT on Cloudflare:
-You have two options:
+1. **Find your registrar** (where you bought `musebar.fr`)
+   - Use https://lookup.icann.org/ to find your registrar if unsure
 
-**Option A: Transfer domain to Cloudflare (Recommended)**
-1. Follow Cloudflare's domain transfer guide
-2. Once transferred, DNS will be automatically configured
+2. **Log into your registrar's dashboard**
 
-**Option B: Configure DNS manually**
-1. In your domain registrar's DNS settings, add a CNAME record:
-   - **Name**: `@` (or `www` for www subdomain)
-   - **Type**: `CNAME`
-   - **Value**: `muse-bar.pages.dev` (your Cloudflare Pages URL)
-   - **TTL**: `3600` (or auto)
+3. **Find nameserver/DNS settings** for `musebar.fr`
 
-2. For the root domain (`@`), you may need to use an A record instead:
-   - **Name**: `@`
-   - **Type**: `A`
-   - **Value**: `192.0.2.1` (Cloudflare will provide the exact IP)
-   - **TTL**: `3600`
+4. **Replace nameservers** with Cloudflare's nameservers:
+   - `anirban.ns.cloudflare.com`
+   - `dorthy.ns.cloudflare.com`
+   - Delete any old nameservers
+   - Save changes
+
+5. **Turn off DNSSEC** (if enabled) at your registrar
+
+6. **Wait 5-30 minutes** for nameservers to propagate
+
+7. **Verify in Cloudflare:** The "Invalid nameservers" badge should change to "Active"
+
+**📖 Detailed guide:** See `DNS_SETUP_GUIDE.md` for step-by-step instructions
+
+#### Step 2: Connect Domain in Cloudflare Pages (Automatic DNS)
+
+Once nameservers are updated and Cloudflare shows "Active":
+
+1. Go to your Pages project → **Custom domains** tab
+2. Click **"Set up a custom domain"**
+3. Enter: `musebar.fr`
+4. Cloudflare Pages will **automatically**:
+   - Create all necessary DNS records (A, CNAME, etc.)
+   - Provision SSL certificate
+   - Connect your site to the domain
+
+**You don't need to manually add DNS records!** Cloudflare Pages handles everything automatically once nameservers are updated.
 
 ### 2.3 SSL/TLS Configuration
 
