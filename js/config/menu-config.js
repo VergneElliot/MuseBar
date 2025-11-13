@@ -213,7 +213,7 @@ const MENU_CONFIG = {
           name: "Blancs",
           items: [
             {
-              name: "RABBLY",
+              name: "RABOLY",
               price: "25€",
               description: "Vin de France, Sec Fruité (75cl). 6.50€ le verre.",
             },
