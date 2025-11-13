@@ -74,14 +74,36 @@
 
   .nav-container {
     padding: 0 20px;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .nav-logo a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
   }
 
   .nav-logo img {
     height: 35px;
+    transform: translateY(0);
+    display: block;
+    vertical-align: middle;
   }
 
   .hamburger {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 0;
   }
 
   .nav-menu {
@@ -613,14 +635,37 @@
 
   .nav-container {
     padding: 0 15px;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .nav-logo a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
   }
 
   .nav-logo img {
     height: 32px;
+    transform: translateY(0);
+    display: block;
+    vertical-align: middle;
   }
 
   .hamburger {
     margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 0;
   }
 
   .bar {
