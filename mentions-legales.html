@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions Légales - Muse Bar</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+        background: var(--background);
+      }
+      .legal-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 120px 20px 60px;
+      }
+      .legal-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: var(--secondary-color);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .legal-section {
+        margin-bottom: 3rem;
+      }
+      .legal-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--primary-color);
+      }
+      .legal-section h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.3rem;
+        color: var(--secondary-color);
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .legal-section p {
+        margin-bottom: 1rem;
+        color: var(--light-text);
+      }
+      .legal-section ul {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+      .legal-section li {
+        margin-bottom: 0.5rem;
+        color: var(--light-text);
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+        transform: translateX(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div class="legal-container">
+      <h1 class="legal-title">Mentions Légales</h1>
+
+      <div class="legal-section">
+        <h2>1. Informations sur l'entreprise</h2>
+        <p>
+          <strong>Raison sociale :</strong>
+          <span id="company-name">Muse Bar</span>
+        </p>
+        <p>
+          <strong>Forme juridique :</strong> <span id="legal-form">SASU</span>
+        </p>
+        <p><strong>Adresse du siège social :</strong></p>
+        <p id="company-address">
+          254 RUE MARTAINVILLE <br />76000 Rouen, France
+        </p>
+        <p>
+          <strong>SIRET :</strong> <span id="siret">931 334 718 00018</span>
+        </p>
+        <p>
+          <strong>SIREN :</strong>
+          <span id="siren">931 334 718 R.C.S. Rouen</span>
+        </p>
+        <p>
+          <strong>Numéro de TVA intracommunautaire :</strong>
+          <span id="vat-number">FR64 931334718</span>
+        </p>
+        <p>
+          <strong>Capital social :</strong> <span id="capital">2000.00 €</span>
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>2. Directeur de publication</h2>
+        <p>
+          <strong>Directeur de publication :</strong>
+          <span id="director-name"> Hugo Martins</span>
+        </p>
+        <p>
+          <strong>Fonction :</strong>
+          <span id="director-role">Président</span>
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>3. Hébergement</h2>
+        <p>
+          <strong>Hébergeur :</strong>
+          <span id="hosting-name">Cloudflare, Inc.</span>
+        </p>
+        <p>
+          <strong>Adresse :</strong>
+          <span id="hosting-address"
+            >101 Townsend Street, San Francisco, CA 94107, USA</span
+          >
+        </p>
+        <p>
+          <strong>Site web :</strong>
+          <a
+            href="https://www.cloudflare.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.cloudflare.com</a
+          >
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>4. Propriété intellectuelle</h2>
+        <p>
+          L'ensemble de ce site relève de la législation française et
+          internationale sur le droit d'auteur et la propriété intellectuelle.
+          Tous les droits de reproduction sont réservés, y compris pour les
+          documents téléchargeables et les représentations iconographiques et
+          photographiques.
+        </p>
+        <p>
+          La reproduction de tout ou partie de ce site sur un support
+          électronique quel qu'il soit est formellement interdite sauf
+          autorisation expresse du directeur de la publication.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>5. Protection des données personnelles</h2>
+        <p>
+          Conformément à la loi « Informatique et Libertés » du 6 janvier 1978
+          modifiée et au Règlement Général sur la Protection des Données (RGPD),
+          vous disposez d'un droit d'accès, de rectification, de suppression et
+          d'opposition aux données personnelles vous concernant.
+        </p>
+        <p>
+          Pour exercer ces droits, vous pouvez nous contacter : email en cours
+          de création
+        </p>
+        <p>
+          Pour plus d'informations, consultez notre
+          <a href="politique-confidentialite.html"
+            >Politique de Confidentialité</a
+          >.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>6. Cookies</h2>
+        <p>
+          Ce site utilise des cookies pour améliorer l'expérience utilisateur.
+          Des cookies peuvent être déposés sur votre terminal afin d’assurer le
+          bon fonctionnement du site et de mesurer l’audience. Vous pouvez
+          accepter ou refuser les cookies via le bandeau prévu à cet effet.
+        </p>
+        <p>
+          Pour plus d'informations sur l'utilisation des cookies, consultez
+          notre
+          <a href="politique-confidentialite.html"
+            >Politique de Confidentialité</a
+          >.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>7. Responsabilité</h2>
+        <p>
+          Les informations contenues sur ce site sont aussi précises que
+          possible et le site est périodiquement remis à jour, mais peut
+          toutefois contenir des inexactitudes, des omissions ou des lacunes.
+        </p>
+        <p>
+          Muse Bar ne pourra être tenu responsable des dommages directs et
+          indirects causés au matériel de l'utilisateur, lors de l'accès au
+          site, et résultant soit de l'utilisation d'un matériel ne répondant
+          pas aux spécifications, soit de l'apparition d'un bug ou d'une
+          incompatibilité.
+        </p>
+      </div>
+
+      <div class="legal-section">
+        <h2>8. Liens hypertextes</h2>
+        <p>
+          Le site peut contenir des liens hypertextes vers d'autres sites
+          présents sur le réseau Internet. Les liens vers ces autres ressources
+          vous font quitter le site.
+        </p>
+        <p>
+          Il est possible de créer un lien vers la page de présentation de ce
+          site sans autorisation expresse de l'éditeur. Aucune autorisation ni
+          demande d'information préalable ne peut être exigée par l'éditeur à
+          l'égard d'un site qui souhaite établir un lien vers le site de
+          l'éditeur.
+        </p>
+      </div>
+
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/config/config.js"></script>
+    <script src="js/loader.js"></script>
+    <script>
+      // Mise à jour des informations depuis la config
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof SITE_CONFIG !== "undefined" && SITE_CONFIG.legal) {
+          const legal = SITE_CONFIG.legal;
+
+          if (legal.company) {
+            document.getElementById("company-name").textContent =
+              legal.company.name;
+            document.getElementById("legal-form").textContent =
+              legal.company.legalForm;
+            document.getElementById(
+              "company-address"
+            ).innerHTML = `${legal.company.headquartersAddress}<br>${legal.company.headquartersCity}`;
+            document.getElementById("siret").textContent = legal.company.siret;
+            document.getElementById("siren").textContent = legal.company.siren;
+            document.getElementById("vat-number").textContent =
+              legal.company.vatNumber;
+            document.getElementById("capital").textContent =
+              legal.company.capital;
+          }
+
+          if (legal.director) {
+            document.getElementById("director-name").textContent =
+              legal.director.name;
+            document.getElementById("director-role").textContent =
+              legal.director.role;
+          }
+
+          if (legal.hosting) {
+            document.getElementById("hosting-name").textContent =
+              legal.hosting.name;
+            document.getElementById("hosting-address").textContent =
+              legal.hosting.address;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

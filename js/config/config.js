@@ -12,7 +12,7 @@ const SITE_CONFIG = {
     address: "4 impasse des Hauts Mariages",
     city: "76000 Rouen, France",
     phone: "+33 0 00 00 00 00",
-    email: "muse@maildetest.com",
+    email: "en cours de création",
     coordinates: {
       lat: 49.4401499,
       lng: 1.098898,
@@ -56,6 +56,28 @@ const SITE_CONFIG = {
     author: "Muse Bar",
     ogImage: "images/bar-interior.png",
     canonical: "https://musebar.fr",
+  },
+
+  legal: {
+    company: {
+      name: "Muse Bar",
+      legalForm: "SASU",
+      headquartersAddress: "254 RUE MARTAINVILLE",
+      headquartersCity: "76000 Rouen, France",
+      siret: "931 334 718 00018",
+      siren: "931 334 718 R.C.S. Rouen",
+      vatNumber: "FR64 931334718",
+      capital: "2000.00 €",
+    },
+    director: {
+      name: "Hugo Martins",
+      role: "Président",
+    },
+    hosting: {
+      name: "Cloudflare, Inc.",
+      address: "101 Townsend Street, San Francisco, CA 94107, USA",
+      website: "https://www.cloudflare.com",
+    },
   },
 };
 
